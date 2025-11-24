@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Twitter, Github, Linkedin, Mail, Heart, Instagram } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import LineIcon from "@/components/icons/LineIcons"; // <-- Added
+import LineIcon from "@/assets/line.svg";
 
 const Footer = () => {
   return (
@@ -93,7 +93,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="h-9 w-9 flex items-center justify-center rounded-md border border-border hover:bg-accent hover:text-accent-foreground transition-colors"
               >
-                <LineIcon className="h-4 w-4" /> {/* <-- Replaced img */}
+                <img src={LineIcon} className="h-4 w-4" alt="LINE" />
               </a>
               <a 
                 href="mailto:pramaa.suhardjo@gmail.com"
