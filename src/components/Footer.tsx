@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Twitter, Github, Linkedin, Mail, Heart, Instagram } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import LineIcon from "@/components/icons/LineIcons"; // <-- Added
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src="/pramvin.png"
+                src={`${import.meta.env.BASE_URL}pramvin.png`}
                 className="h-10 w-10 object-contain theme-logo"
                 alt="Logo"
               />
@@ -87,12 +88,12 @@ const Footer = () => {
                 <Github className="h-4 w-4" />
               </a>
               <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+                href="https://line.me/ti/p/~pvsuhardjo"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="h-9 w-9 flex items-center justify-center rounded-md border border-border hover:bg-accent hover:text-accent-foreground transition-colors"
               >
-                <Linkedin className="h-4 w-4" />
+                <LineIcon className="h-4 w-4" /> {/* <-- Replaced img */}
               </a>
               <a 
                 href="mailto:pramaa.suhardjo@gmail.com"

@@ -27,11 +27,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background animate-fade-in">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-muted/50 to-background">
+      <section className="relative py-20 bg-gradient-to-b from-muted/50 to-background animate-fade-in">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Get In Touch</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ const Contact = () => {
 
       {/* Contact Info Cards */}
       <section className="py-12 container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 animate-fade-in">
           <Card className="border-border hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
@@ -104,7 +104,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form Section */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto animate-fade-in">
           <Card className="border-border">
             <CardHeader>
               <CardTitle className="text-2xl">Send Me a Message</CardTitle>
@@ -181,7 +181,7 @@ const Contact = () => {
 
       {/* Social Links Section */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center animate-fade-in">
           <h2 className="text-3xl font-bold mb-4">Connect With Me</h2>
           <p className="text-muted-foreground mb-8">
             Follow me on social media for updates and insights
@@ -227,10 +227,10 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 container mx-auto px-4">
+      <section className="py-16 container mx-auto px-4 animate-fade-in">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in">
             <Card className="border-border">
               <CardHeader>
                 <CardTitle className="text-lg">How quickly do you respond?</CardTitle>

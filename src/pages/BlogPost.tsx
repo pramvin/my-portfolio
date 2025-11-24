@@ -74,9 +74,9 @@ const BlogPost = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-800">
         <Header />
-        <div className="container mx-auto px-4 py-16 text-center">
+        <div className="container mx-auto px-4 py-16 text-center animate-fade-in">
           <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
           <Button asChild>
             <Link to="/"><ArrowLeft className="mr-2 h-4 w-4" />Back to Home</Link>
@@ -87,7 +87,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background animate-fade-in">
       <Header />
       
       <article className="container mx-auto px-4 py-12 max-w-4xl">

@@ -26,7 +26,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">About Me</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               I'm a passionate developer and designer who loves creating beautiful,
@@ -39,11 +39,11 @@ const About = () => {
 
       {/* Story Section */}
       <section className="py-16 container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto animate-fade-in">
           <Card className="border-border">
             <CardContent className="p-8 md:p-12">
               <h2 className="text-3xl font-bold mb-6">My Story</h2>
-              <div className="prose prose-lg max-w-none space-y-4">
+              <div className="prose prose-lg max-w-none space-y-4 animate-fade-in">
                 <p className="text-muted-foreground leading-relaxed">
                   I started my journey in tech over a decade ago, driven by curiosity and a love
                   for problem-solving. What began as a hobby quickly turned into a passion, and
@@ -69,7 +69,7 @@ const About = () => {
       {/* Skills Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
             <p className="text-muted-foreground mb-8">
               Tools and technologies I work with
@@ -88,8 +88,8 @@ const About = () => {
       {/* Interests Section */}
       <section className="py-16 container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">What I Love</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-12 text-center animate-fade-in">What I Love</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
             {interests.map((interest) => (
               <Card key={interest.title} className="border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
@@ -108,9 +108,9 @@ const About = () => {
       {/* Fun Facts Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto animate-fade-in">
             <h2 className="text-3xl font-bold mb-8 text-center">Fun Facts</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
               <Card className="border-border">
                 <CardContent className="p-6">
                   <div className="text-4xl font-bold text-primary mb-2">500+</div>
